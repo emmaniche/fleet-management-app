@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FleetOS — Fleet Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#/dashboard">
+      <span class="brand-mark" id="brandMark"></span>
+      <span class="brand-text"><strong>FleetOS</strong><small>Fleet management</small></span>
+    </a>
+    <nav id="nav"></nav>
+    <div class="sidebar-foot">
+      <button class="navitem" data-nav="settings" id="settingsNav"></button>
+      <div class="storage-note"><span class="dot"></span> Saved on this device</div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="iconbtn menu" id="menuBtn" aria-label="Menu"></button>
+      <div class="titles">
+        <h1 id="pageTitle">Dashboard</h1>
+        <p id="pageSub">—</p>
+      </div>
+      <div class="topbar-actions" id="topActions"></div>
+    </header>
+    <main class="view" id="view"></main>
+  </div>
+</div>
+
+<div id="modalRoot"></div>
+<div id="toastRoot" class="toast-root"></div>
+
+<script src="store.js"></script>
+<script src="ui.js"></script>
+<script src="dashboard.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
