@@ -1,5 +1,7 @@
 # FleetOS — Fleet Management
 
+**Live demo:** https://emmaniche.github.io/fleet-management-app/
+
 A local-first fleet management app built from the **Fleet Management Report** workbook in `docs/`.
 No build step, no backend, no accounts: open `index.html` and the app runs, saving everything in the browser.
 
